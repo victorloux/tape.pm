@@ -1,0 +1,3 @@
+/server/script/*
+/server/uploads/*
+/device/media/encoded/*/device/media/sent/*/device/media/tmp/*

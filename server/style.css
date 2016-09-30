@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/****/
+
+body {
+	font-family: "Fira Mono", monospace;
+	background-color: #E6E6E6;
+	font-size: 1.3em;
+}
+
+a:link, a:visited {
+	color: #00244A;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+	span {
+		display: none;
+	}
+
+	h1:hover span, h1:active span {
+		display: inline;
+	}
+
+	.code {
+		display: inline;
+		color: #666666;
+	}
+
+.audio {
+	width: 256px;
+	margin: 1.8em auto;
+}
+
+#container {
+	width: 80%;
+	max-width: 600px;
+	margin: 20px auto 0;
+}
+
+input[type="text"] {
+	padding: 0.4em 0.2em;
+	border: 1px solid #999999;
+	border-radius: 0.2em;
+	font-size: 1.3em;
+	font-family: Cousine, monospace;
+}
+
+.error {
+	padding: 0.7em 1.4em;
+	margin-bottom: 2em;
+	color: #800040;
+	border: 1px solid #800040;
+	border-radius: 3px;
+}
+
+h4 {
+	font-weight: normal;
+	text-align: center;
+}
+
+	@keyframes record {
+	    0% { color: rgba(210, 20, 20, 1); }
+	    70% { color: rgba(210, 0, 0, 0.8); }
+	    100% { color: rgba(210, 0, 0, 0.4); }
+	}
+
+	span.record {
+		color: rgb(210, 20, 20);
+		animation-name: record;
+	    animation-duration: 1s;
+	    animation-direction: alternate;
+	    animation-iteration-count: infinite;
+	}
+
+.sub {
+	font-size: 0.8em;
+	margin-top: 4em;
+	padding-top: 0.5em;
+	border-top: 1px solid #B3B3B3;
+	color: #B3B3B3;
+	clear: both;
+}
+
+.share {
+	list-style-type: none;
+	margin-bottom: 5em;
+	font-size: 0.6em;
+}
+
+	.share li {
+		display: block;
+		float: left;
+
+		margin-right: 0.5em;
+	}
+
+		.share li a {
+			display: block;
+			padding: 0.4em 0.6em;
+			text-decoration: none;
+			background-color: #FFFFFF;
+			border-radius: 0.2em;
+
+			text-transform: uppercase;
+		}
+
+		.share li a:active {
+			position: relative;
+			top: 2px;
+		}
+
+@media screen and (max-width: 480px) {
+    h1 {
+		font-size: 1.3em;
+    }
+
+    h4 {
+		text-align: left;
+		font-size: 0.8em;
+    }
+}
